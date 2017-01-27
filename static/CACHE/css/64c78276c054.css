@@ -6762,9 +6762,9 @@ button.close {
 }
 
 /** FONTS **/
-@font-face { font-family: Icomoon; src: url('/static/font/icomoon/icomoon.eot?c8d52ece2212'); src: url('/static/font/icomoon/icomoon.ttf?c8d52ece2212') format("truetype"), url('/static/font/icomoon/icomoon.woff?c8d52ece2212') format("woff"), url('/static/font/icomoon/icomoon.svg?c8d52ece2212') format("svg"); }
+@font-face { font-family: Icomoon; src: url('/static/font/icomoon/icomoon.eot'); src: url('/static/font/icomoon/icomoon.ttf') format("truetype"), url('/static/font/icomoon/icomoon.woff') format("woff"), url('/static/font/icomoon/icomoon.svg') format("svg"); }
 
-@font-face { font-family: 'Glyphicons Halflings'; src: url('/static/font/bootstrap/glyphicons-halflings-regular.eot?db75561dc74f'); src: url('/static/font/bootstrap/glyphicons-halflings-regular.ttf?db75561dc74f') format("truetype"), url('/static/font/bootstrap/glyphicons-halflings-regular.woff?db75561dc74f') format("woff"), url('/static/font/bootstrap/glyphicons-halflings-regular.svg?db75561dc74f') format("svg"); }
+@font-face { font-family: 'Glyphicons Halflings'; src: url('/static/font/bootstrap/glyphicons-halflings-regular.eot'); src: url('/static/font/bootstrap/glyphicons-halflings-regular.ttf') format("truetype"), url('/static/font/bootstrap/glyphicons-halflings-regular.woff') format("woff"), url('/static/font/bootstrap/glyphicons-halflings-regular.svg') format("svg"); }
 
 /** SCREEN **/
 /** SIZES **/

@@ -208,7 +208,6 @@
                         <div class="modal-video">
                             <div class="embed-responsive embed-responsive-16by9">
                                 <iframe id="skippair-youtube-video" class="embed-responsive-item" src="https://www.youtube.com/embed/j36J14fblN8?rel=0&amp;showinfo=0&autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                                <!--<iframe id="skippair-youtube-video" class="embed-responsive-item" src="https://www.youtube.com/embed/j36J14fblN8?rel=1&autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
                             </div>
                         </div>
                     </div>
@@ -227,15 +226,12 @@
                 };
 
                 if (window.mobileAndTabletcheck()) {
-//                    console.log('Mobile or Table');
                     $('.play-button').on('click', function (e) {
                         e.preventDefault();
-//                        window.open('https://www.youtube.com/embed/j36J14fblN8?rel=1&autoplay=1', '_blank');
                         window.open('https://www.youtube.com/embed/j36J14fblN8?rel=0&amp;showinfo=0&autoplay=1', '_blank');
                     });
 
                 } else {
-                    console.log('Desktop');
                     $('.play-button').on('click', function (e) {
                         e.preventDefault();
                         $('#' + $(this).data('modal-id')).modal();

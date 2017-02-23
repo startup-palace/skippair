@@ -147,10 +147,10 @@
                     </h2>
                 </div>
                 <div style="margin-bottom: 40px">
-                    <h3 class="description">Nous vous félicitons chaleureusement et sommes impatients de vous transmettre votre bon pour une croisière weekend en voilier pour 2 personnes d’une valeur de 450€.</h3>
+                    <h3 class="description" style="font-size: 19px">Nous vous félicitons chaleureusement et sommes impatients de vous transmettre votre bon pour une croisière weekend en voilier pour 2 personnes d’une valeur de 450€.</h3>
                 </div>
                 <div>
-                    <button class="play-button" data-modal-id="modal-video" ><span class="play-button-content"><i class="glyphicon glyphicon-play"></i>Voir la vidéo</span></button>
+                    <button class="play-button" data-modal-id="modal-video"><span class="play-button-content"><i class="glyphicon glyphicon-play"></i>Décourez nos croisières</span></button>
                 </div>
                 <div>
                     <div class="info-concours">
@@ -232,34 +232,34 @@
                     return check;
                 };
 
-                if (window.mobileAndTabletcheck()) {
-                    $('.play-button').on('click', function (e) {
-                        e.preventDefault();
-                        window.open('https://www.youtube.com/embed/j36J14fblN8?rel=0&amp;showinfo=0&autoplay=1', '_blank');
-                    });
+//                if (window.mobileAndTabletcheck()) {
+                $('.play-button').on('click', function (e) {
+                    e.preventDefault();
+                    window.open('http://skippair.com/fr/', '');
+                });
 
-                } else {
-                    $('.play-button').on('click', function (e) {
-                        e.preventDefault();
-                        $('#' + $(this).data('modal-id')).modal();
-                    });
-                    /* Get iframe src attribute value i.e. YouTube video url
-                     and store it in a variable */
-                    var url = $("#skippair-youtube-video").attr('src');
-                    /* Remove iframe src attribute on page load to
-                     prevent autoplay in background */
-                    $("#skippair-youtube-video").attr('src', '');
-                    /* Assign the initially stored url back to the iframe src
-                     attribute when modal is displayed */
-                    $("#modal-video").on('shown.bs.modal', function(){
-                        $("#skippair-youtube-video").attr('src', url);
-                    });
-                    /* Assign empty url value to the iframe src attribute when
-                     modal hide, which stop the video playing */
-                    $("#modal-video").on('hide.bs.modal', function(){
-                        $("#skippair-youtube-video").attr('src', '');
-                    });
-                }
+//                } else {
+//                    $('.play-button').on('click', function (e) {
+//                        e.preventDefault();
+//                        $('#' + $(this).data('modal-id')).modal();
+//                    });
+//                    /* Get iframe src attribute value i.e. YouTube video url
+//                     and store it in a variable */
+//                    var url = $("#skippair-youtube-video").attr('src');
+//                    /* Remove iframe src attribute on page load to
+//                     prevent autoplay in background */
+//                    $("#skippair-youtube-video").attr('src', '');
+//                    /* Assign the initially stored url back to the iframe src
+//                     attribute when modal is displayed */
+//                    $("#modal-video").on('shown.bs.modal', function(){
+//                        $("#skippair-youtube-video").attr('src', url);
+//                    });
+//                    /* Assign empty url value to the iframe src attribute when
+//                     modal hide, which stop the video playing */
+//                    $("#modal-video").on('hide.bs.modal', function(){
+//                        $("#skippair-youtube-video").attr('src', '');
+//                    });
+//                }
             });
         </script>
 
